@@ -1,0 +1,32 @@
+#logoImage  {
+	position: relative;
+	left:400px; 
+	height:100px;
+	top: -15px;
+}
+#left {
+	position: relative;
+	left:0px;
+	top: -100px;
+}
+
+#right {
+	position: relative;
+	left:750px;	
+	top: -180px;
+
+}
+
+.line1 {
+
+}
+
+.line2 {
+
+}
+
+
+
+
+
+

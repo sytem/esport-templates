@@ -1,0 +1,129 @@
+* {
+  -webkit-box-sizing: border-box;
+  Box-Sizing:border-box;				 								 					 /* This sets all elements to be the actual set dimensions, disregarding padding and borders */
+	-webkit-backface-visibility: hidden;					 				 	 /* Hide the backface of elements - usuefull for 3d effects */
+	-webkit-transition: translate3d(0,0,0);				 		 			 /* Turns on hardware acceleration - not known to be of benefit in CCG, but won't hurt */
+    }
+
+HTML, BODY {
+	Width:1280px;  												 				 					 /* Set to your channel's resolution */
+	Height:720px;																					 /* Set to your channel's resolution */
+	Margin:0;																								 /* Use all available space */
+	Padding:0;																							 /* Use all available space */
+	Background:transparent;												 					 /* The HTML consumer actually makes your background transparent by default, unless a color or image is specified - but this might be usefull when debugging in browsers */
+	Overflow:hidden;																				 /* Hide any overflowing elements - to disable scollbars */
+	-webkit-font-smoothing:antialiased !important;	 				 /* Set aliasing of fonts - possible options: none, antialiased,  subpixel-antialiased */
+	}
+
+BODY {
+    Font-Family: Calibri,Arial;
+	Color: #FFF;
+	}
+	
+#demo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    Color: #222222;
+}	
+	
+	
+	
+/* These are action safe grids - positions are approximate to EBU R95-2008 */
+#action-safe, #graphics-safe {
+    Display:visible;							 	 	 			 /* Change none to visible to overlay action and graphics safe grids */
+    Position:fixed;
+    Top:0; Left:0; Bottom:0; Right:0;
+	Opacity:0.5;
+	}
+	
+#action-safe {
+    Border:2px solid green;
+    Margin:3.7%;
+	Margin-Top:2%;
+    Margin-Bottom:2%;
+	Z-Index:99999;
+	}
+
+#graphics-safe {
+	Border:2px solid red;
+	Margin:10%;
+	Margin-Top:3.1%; 
+    Margin-Bottom:3.1%;
+	Z-Index:99998;
+	}
+	
+
+	
+	
+#box {
+
+    width: 1300px;
+    height: 100px;
+    position: relative;
+    background-color: #dc8021;
+    top:580px;
+    left:-1000px;
+	-webkit-border-radius: 10px;
+}
+
+#boxContent{
+    padding:  10px;
+	padding-left: 150px;
+    font-size: 30px;
+    Font-Family: verdana;
+    font-weight: bold;
+	Color: #fff;	
+ }
+ 	
+	
+	
+	
+.animationMoveIn {
+    -webkit-animation-name: moveIn;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes moveIn {
+    0%   {left:-1300px; }
+    100% {left:-10px; }
+}
+
+
+.animationMoveOut {
+    -webkit-animation-name: moveOut;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes moveOut {
+    0%   {left:-10px; }
+    100% {left:1300px; }
+}
+
+
+
+ 
+.animationFadeIn {
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeIn {
+    0%   {opacity: 0; }
+    50%  {opacity: 0; }  
+    100% {opacity: 1; }
+}
+
+.animationFadeOut {
+    -webkit-animation-name: fadeOut;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeOut {
+    0%   {opacity: 1; }
+    100% {opacity: 0; }
+}	

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CasparCG HTML tester</title>
+		<script type="text/javascript" src="jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="testFrame.js"></script>
+    </head>
+
+    <body>
+
+		  <div id="control">
+		  		<button type="button" id="testStop">stop</button>	
+		  		<button type="button" id="testPlay">play</button>
+		  		<input type="text" id="updateString" name="updateString" value="update string"></input>
+		  		<button type="button" id="testUpdate">update</button>
+		  		<button type="button" id="testNext">next</button>
+		  		<button type="button" id="testRemove">remove</button>
+		  		<button type="button" id="testInvoke">invoke</button>
+		  		<input type="text" id="invokeString" name="invokeString" value="otherFunction('testing invoke')"></input>
+
+		  		<select id="templateSelect">
+  					<option value="01_interview.html">interview</option>
+ 					<option value="02_casters.html">casters</option>
+				</select>
+		  </div>
+
+
+	<iframe id="testbed" src="01_interview.html" width="1280" height="720" style="Background:FFF;"></iframe>
+
+
+</body>
+</html>
