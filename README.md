@@ -7,4 +7,7 @@ Feel free to use code as you need, graphic design is something you should made y
 
 How to install and use:
 
-Copy these files to subfolder of your templates-folder.
+Copy these files to subfolder of your templates-folder. These can be used like flash templates, data from client as xml (not json)
+
+
+testFrame.html can be used for offline testing layouts with browser. Do not use internet-server, there are no checks for input data at the moment.
