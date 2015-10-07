@@ -1,0 +1,17 @@
+
+.fadein { 
+	top: 200px;
+	left: 200px;
+	position: absolute; 
+	width: 320px; 
+	height: 120px; 
+    background-color: #000000;
+    
+    -webkit-border-radius: 10px;
+}
+
+.fadein img { 
+	position:absolute; 
+	left:10px; 
+	top:10px; 
+}
