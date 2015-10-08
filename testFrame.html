@@ -12,16 +12,23 @@
 		  <div id="control">
 		  		<button type="button" id="testStop">stop</button>	
 		  		<button type="button" id="testPlay">play</button>
+		  		<!-- broken, need fix format in js
 		  		<input type="text" id="updateString" name="updateString" value="update string"></input>
 		  		<button type="button" id="testUpdate">update</button>
+		  		-->
 		  		<button type="button" id="testNext">next</button>
 		  		<button type="button" id="testRemove">remove</button>
+		  		<!-- xss-hazard, enable only on private enviroment (also in js)-->
+		  		<!--
 		  		<button type="button" id="testInvoke">invoke</button>
 		  		<input type="text" id="invokeString" name="invokeString" value="otherFunction('testing invoke')"></input>
-
+				-->
+				
 		  		<select id="templateSelect">
   					<option value="01_interview.html">interview</option>
  					<option value="02_casters.html">casters</option>
+ 					<option value="10_bracket.html">casters</option>
+ 					<option value="11_adrotate.html">casters</option>
 				</select>
 		  </div>
 
