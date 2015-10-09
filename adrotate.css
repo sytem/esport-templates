@@ -1,17 +1,24 @@
 
 .fadein { 
-	top: 200px;
-	left: 200px;
+	top: 545px;
+	left: 195px;
 	position: absolute; 
 	width: 320px; 
 	height: 120px; 
-    background-color: #000000;
-    
-    -webkit-border-radius: 10px;
+    background-color:rgba(0,0,0,0.9);
+	border-color: #000000;
+	border-width: 2px;
+    -webkit-border-radius: 5px;
 }
+
 
 .fadein img { 
 	position:absolute; 
-	left:10px; 
 	top:10px; 
+	left:10px; 	
+	max-width: 300px; 
+	max-height: 100px;
+	
+
+	
 }
