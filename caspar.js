@@ -37,23 +37,27 @@ function update(xml) {
 		// check in what page we are, so we can use correct settings
 		var pageName = location.href.split("_").slice(-1)[0].split(".")[0].toLowerCase(); 
 	
+		var settingsFields = settings[pageName]; //get object contains this pages fields
+		
 		var parser = new DOMParser();
 		var valueList = parser.parseFromString(xml, "text/xml");
-
-		var foo = settings[pageName].f0;
 		
 		//f0 = valueList.evaluate("/templateData/componentData[@id='f0']/data/@value", valueList, null, XPathResult.STRING_TYPE, null).stringValue;
-		// ### fix count
-		for (i = 0; i < 4; i++) { 
-			// check if we have value from client, if not, use from settings (or empty)
-
-			var searchString = "/templateData/componentData[@id='f" + i + "']/data/@value";
-			fieldFromClient = valueList.evaluate(searchString, valueList, null, XPathResult.STRING_TYPE, null).stringValue;
-			
+		
+		for (i = 0; i < Object.keys(settingsFields).length; i++) { 
 			// ### check if div exists
 			var fieldName = "f" + i;
 			if (document.getElementById(fieldName) !=null) {
-				document.getElementById(fieldName).innerHTML=fieldFromClient; 
+				// check if we have value from client, if not, use from settings
+				var searchString = "/templateData/componentData[@id='f" + i + "']/data/@value";
+				fieldFromClient = valueList.evaluate(searchString, valueList, null, XPathResult.STRING_TYPE, null).stringValue;
+				
+				if (fieldFromClient != ""){
+					document.getElementById(fieldName).innerHTML=fieldFromClient; 
+				}
+				else {
+					document.getElementById(fieldName).innerHTML=settingsFields[fieldName];
+				}
 			}	
 		}
 	}
