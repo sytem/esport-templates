@@ -31,36 +31,33 @@ function stop() {
 
 
 function update(xml) {
-	console.log('update1');
+	//console.log('update1');
 	
-	// check if settings.showFieldNames is set
-	// check in what page we are, so we can use correct settings
-	// loop all fields
-	// check if we have value from client, if not, use from settings (or empty)
+	if ( settings.showFieldNames != true) {
+		// check in what page we are, so we can use correct settings
+		var pageName = location.href.split("_").slice(-1)[0].split(".")[0].toLowerCase(); 
 	
-    var parser = new DOMParser();
-    var valueList = parser.parseFromString(xml, "text/xml");
-	// ### make loop here
+		var parser = new DOMParser();
+		var valueList = parser.parseFromString(xml, "text/xml");
 
-    f0 = valueList.evaluate("/templateData/componentData[@id='f0']/data/@value", valueList, null, XPathResult.STRING_TYPE, null).stringValue;
-	f1 = valueList.evaluate("/templateData/componentData[@id='f1']/data/@value", valueList, null, XPathResult.STRING_TYPE, null).stringValue;
-	f2 = valueList.evaluate("/templateData/componentData[@id='f2']/data/@value", valueList, null, XPathResult.STRING_TYPE, null).stringValue;
-	f3 = valueList.evaluate("/templateData/componentData[@id='f3']/data/@value", valueList, null, XPathResult.STRING_TYPE, null).stringValue;	
+		var foo = settings[pageName].f0;
+		
+		//f0 = valueList.evaluate("/templateData/componentData[@id='f0']/data/@value", valueList, null, XPathResult.STRING_TYPE, null).stringValue;
+		// ### fix count
+		for (i = 0; i < 4; i++) { 
+			// check if we have value from client, if not, use from settings (or empty)
 
-	// ### check if div exists
-	if (document.getElementById('f0') !=null) {
-		document.getElementById("f0").innerHTML=f0; 
-	}	
-    if (document.getElementById('f1') !=null) {
-		document.getElementById("f1").innerHTML=f1; 
-	}	
-	if (document.getElementById('f2') !=null) {
-		document.getElementById("f2").innerHTML=f2; 
-	}	
-	if (document.getElementById('f3') !=null) {
-		document.getElementById("f3").innerHTML=f3; 
-	}	
-
+			var searchString = "/templateData/componentData[@id='f" + i + "']/data/@value";
+			fieldFromClient = valueList.evaluate(searchString, valueList, null, XPathResult.STRING_TYPE, null).stringValue;
+			
+			// ### check if div exists
+			var fieldName = "f" + i;
+			if (document.getElementById(fieldName) !=null) {
+				document.getElementById(fieldName).innerHTML=fieldFromClient; 
+			}	
+		}
+	}
+	// else leave fields as is
 }
 
 
