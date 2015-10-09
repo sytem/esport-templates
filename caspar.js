@@ -32,6 +32,12 @@ function stop() {
 
 function update(xml) {
 	console.log('update1');
+	
+	// check if settings.showFieldNames is set
+	// check in what page we are, so we can use correct settings
+	// loop all fields
+	// check if we have value from client, if not, use from settings (or empty)
+	
     var parser = new DOMParser();
     var valueList = parser.parseFromString(xml, "text/xml");
 	// ### make loop here
