@@ -1,22 +1,21 @@
 #logoImage  {
-	position: relative;
-	left:400px; 
+	position: absolute;
+	left:500px; 
+	top: 0px;
 	height:100px;
-	top: -10px;
-	float: left;
+	
 }
 #left {
-	position: relative;
-	left:-200px;
-	top: 0px;
-	float: left;
+	position: absolute;
+	left:150px;
+	top: 5px;
+	
 }
 
 #right {
-	position: relative;
-	left:520px;	
-	top: 0px;
-	float: left;
+	position: absolute;
+	right:150px;	
+	top: 5px;
 	text-align: right;
 	
 

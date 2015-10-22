@@ -1,13 +1,18 @@
 
 #logoImage  {
-	position: relative;
-	left:600px;
+	position: absolute;
+	right:180px;
 	top:0px; 
 	height:100px;
-	float: left;
+
 }
 
-
+#left {
+	position: absolute;
+	left:180px;
+	top: 10px;
+	
+}
 
 
 
