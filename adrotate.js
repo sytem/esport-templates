@@ -5,7 +5,7 @@ $(function(){
       $('.fadein :first-child').fadeOut()
          .next('img').fadeIn()
          .end().appendTo('.fadein');}, 
-      5000);
+      10000);
 });
 
 function templatePlay() {
