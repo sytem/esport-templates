@@ -1,21 +1,28 @@
 #box {
 	Color: #000;
-	width: 980px;
-    height: 520px;
-    position: relative;
+	width: 480px;
+    height: 620px;
+    position: absolute;
     background-color: #dc8021;
 	Opacity:0.9;
 	-webkit-border-radius: 30px;
-    top:100px;
-    left:-1000px;
+    top:50px;
+    left: 10px;
 	padding: 30px;
 }
 
+h1 {
+    color: #ffffff;
+}
+
+table {
+     color: #ffffff;
+}
+
 td {
-	border: 1px solid black;
 	padding: 10px;
 	background-color: #dc8021;
-	Opacity: 1;
+	Opacity: 0,6;
 	-webkit-border-radius: 5px;
 }
 
@@ -28,7 +35,7 @@ td {
 
 @-webkit-keyframes moveIn {
     0%   {left:-1080px; }
-    100% {left:150px; }
+    100% {left:50px; }
 }
 
 

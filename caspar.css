@@ -5,18 +5,28 @@
 	-webkit-transition: translate3d(0,0,0);				 		 			 /* Turns on hardware acceleration - not known to be of benefit in CCG, but won't hurt */
     }
 
+@font-face{ 
+    font-family: 'opensans-regular';
+    src: url('font/opensans-regular-webfont.eot');
+    src: url('font/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans-regular-webfont.woff') format('woff'),
+         url('font/opensans-regular-webfont.ttf') format('truetype'),
+         url('font/opensans-regular-webfont.svg#webfont') format('svg');
+}
+
+
 HTML, BODY {
 	Width:1280px;  												 				 					 /* Set to your channel's resolution */
 	Height:720px;																					 /* Set to your channel's resolution */
 	Margin:0;																								 /* Use all available space */
 	Padding:0;																							 /* Use all available space */
 	Background:transparent;												 					 /* The HTML consumer actually makes your background transparent by default, unless a color or image is specified - but this might be usefull when debugging in browsers */
-	Overflow:hidden;																				 /* Hide any overflowing elements - to disable scollbars */
+	Overflow:hidden;																		 /* Hide any overflowing elements - to disable scollbars */
 	-webkit-font-smoothing:antialiased !important;	 				 /* Set aliasing of fonts - possible options: none, antialiased,  subpixel-antialiased */
 	}
 
 BODY {
-    Font-Family: Calibri,Arial;
+    font-family: 'opensans-regular', Arial, sans-serif;     
 	Color: #FFF;
 	}
 	
