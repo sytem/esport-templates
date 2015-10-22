@@ -1,12 +1,18 @@
 var settings = {
 	jsonurl:"",
 	showFieldNames: 0,
-	twitterTag: "#foo",
+	
+	twitterTag: "#InsomniaXVII",
 	
 	casters :{ 
-		f0:"foo",
-		f1:"nick 1",
-		f2:"name 2",
-		f3:"nick 2",
+		f0:"Starre Caster",
+		f1:"nick",
+		f2:"Starre Commentator",
+		f3:"nick tässäkin",
 	}	
+
+	interview :{
+		f0: "Pro Pelaaja"
+		f1: "gamer"
+	}
 };	

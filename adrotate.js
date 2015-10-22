@@ -8,4 +8,12 @@ $(function(){
       5000);
 });
 
+function templatePlay() {
+	document.getElementById('fadein').style.setProperty('display','initial','');
+}
+
+function templateStop() {
+	//hide
+	document.getElementById('fadein').style.setProperty('display','none','');
+}
 
