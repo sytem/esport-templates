@@ -9,7 +9,7 @@ $(function(){
 });
 
 function templatePlay() {
-	document.getElementById('fadein').style.setProperty('display','initial','');
+	
 }
 
 function templateStop() {

@@ -1,7 +1,6 @@
 var settings = {
 	jsonurl:"",
-	showFieldNames: 0,
-	
+	showFieldNames: false,
 	twitterTag: "#InsomniaXVII",
 	
 	casters :{ 

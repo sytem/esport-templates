@@ -14,10 +14,9 @@
 
 .fadein img { 
 	position:absolute; 
-	top:10px; 
-	left:10px; 	
-	max-width: 300px; 
-	max-height: 100px;
+	top:0px; 
+	left:0px; 	
+
 	
 
 	

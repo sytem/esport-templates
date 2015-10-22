@@ -11,7 +11,7 @@ I.e. PLAY 1-1 DEMO
 		
 // CALL 1-1 PLAY
 function play() {
-	//console.log('play');
+	console.log('play');
 	document.getElementById("demo").innerHTML="play";
 
 	//check if we have included template-specific function from another file
@@ -31,12 +31,13 @@ function stop() {
 
 
 function update(xml) {
-	//console.log('update1');
+	console.log('update1');
 	
 	if ( settings.showFieldNames != true) {
 		// check in what page we are, so we can use correct settings
 		var pageName = location.href.split("_").slice(-1)[0].split(".")[0].toLowerCase(); 
-	
+		console.log(pageName);
+		
 		var settingsFields = settings[pageName]; //get object contains this pages fields
 		
 		var parser = new DOMParser();
