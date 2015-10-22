@@ -74,6 +74,7 @@ BODY {
     Font-Family: verdana;
     font-weight: bold;
 	Color: #fff;	
+	float: left;
  }
  	
 	
@@ -81,7 +82,7 @@ BODY {
 	
 .animationMoveIn {
     -webkit-animation-name: moveIn;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: forwards;
 }
 
@@ -107,7 +108,7 @@ BODY {
  
 .animationFadeIn {
     -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-fill-mode: forwards;
 }
 

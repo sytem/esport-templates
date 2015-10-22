@@ -1,9 +1,10 @@
 
 #logoImage  {
 	position: relative;
-	left:900px;
-	top:-55px; 
+	left:600px;
+	top:0px; 
 	height:100px;
+	float: left;
 }
 
 
