@@ -20,16 +20,24 @@
  }
 
 table {
-    border-spacing: 30px 2px;
+   border-spacing: 10px 2px; 
 
 } 
 
 td {
-	border: 1px solid black;
-	padding: 10px;
-	background-color: #dc8021;
-	Opacity: 1;
-	-webkit-border-radius: 5px;
+
+    text-align: center;
+
+}
+
+.pelaaja {
+    text-align: left;
+}
+
+
+a {
+	 text-decoration: none;
+	  Color: #fff;  
 }
 
 .group_scores .adv_limit {
