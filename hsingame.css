@@ -1,0 +1,37 @@
+body {
+	background-image: url("images/hs-ingame.png");
+	background-size: 1280px 720px;
+    background-repeat: no-repeat;
+}
+
+#vasen img{
+	position: absolute;
+	left: 0px;
+	bottom: 432px;
+	width: 179px;
+	border: 0px;
+}
+
+#oikea  img{
+	position: absolute;
+	right: 0px;
+	bottom: 432px;
+	width: 179px;
+	border: 0px;
+}
+
+.active  {
+	width: 79px;
+}
+
+#f0 {
+	position: absolute;
+	left: 10px;
+	top: 300px;
+}
+
+#f1 {
+	position: absolute;
+	right: 10px;
+	top: 300px;
+}

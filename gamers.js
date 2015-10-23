@@ -10,12 +10,12 @@ function templatePlay() {
 	}
 	
 	if ( $.urlParam('left') != null) {
-		var left = $('<img>').attr('src',"http://sytem.fi/pelaajat/" + $.urlParam('left') + ".jpg" );
+		var left = $('<img>').attr('src',"http://elderx.fi/lan/insomnia-xvii/ins-hs/" + $.urlParam('left') + ".JPG" );
 		left.appendTo('#vasen')
 	}
 
 	if ( $.urlParam('right') != null) {
-		var right = $('<img>').attr('src',"http://sytem.fi/pelaajat/" + $.urlParam('right') + ".jpg" );
+		var right = $('<img>').attr('src',"http://elderx.fi/lan/insomnia-xvii/ins-hs/" + $.urlParam('right') + ".JPG" );
 		right.appendTo('#oikea')
 	}		
 }

@@ -3,7 +3,7 @@
 	left: 20px;
 	top: 50 px;
 	width: 150px;
-	height: 300px;
+	transform: rotate(-90deg);
 }
 
 #oikea  img{
@@ -11,5 +11,6 @@
 	right: 20px;
 	top: 50 px;
 	width: 150px;
-	height: 300px;
+
+	transform: rotate(-90deg);
 }

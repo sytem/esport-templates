@@ -63,12 +63,21 @@ function update(xml) {
 		}
 	}
 	// else leave fields as is
+	
+	if (typeof templateUpdate == 'function') { 
+		templateUpdate(); 
+	}
 }
 
 
 // CALL 1-1 NEXT
 function next() {
+	
 	document.getElementById("demo").innerHTML="next";
+	
+	if (typeof templateNext == 'function') { 
+		templateNext();
+	}
 }
 // CALL 1-1 REMOVE
 function remove() {
