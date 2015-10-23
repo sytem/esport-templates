@@ -1,0 +1,57 @@
+#box {
+	Color: #000;
+	width: 1080px;
+    height: 520px;
+    position: absolute;
+    background-color: #dc8021;
+	Opacity:0.9;
+	-webkit-border-radius: 30px;
+    top:100px;
+    left:-1000px;
+	padding: 30px;
+}
+
+#boxContent{
+    padding:  10px;
+    padding-left: 50px;
+    font-size: 20px;
+    Color: #fff;    
+    float: left;
+ }
+
+table {
+    border-spacing: 30px 2px;
+
+} 
+
+td {
+	border: 1px solid black;
+	padding: 10px;
+	background-color: #dc8021;
+	Opacity: 1;
+	-webkit-border-radius: 5px;
+}
+
+
+.animationMoveIn {
+    -webkit-animation-name: moveIn;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes moveIn {
+    0%   {left:-1680px; }
+    100% {left:100px; }
+}
+
+
+.animationMoveOut {
+    -webkit-animation-name: moveOut;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes moveOut {
+    0%   {left:100px; }
+    100% {left:1280px; }
+}
