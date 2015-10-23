@@ -5,6 +5,8 @@ images/*.jpg
 adrotate/*.png
 adrotate/*.jpg 
 
+settings.js
+timetable.html
 
 # OS generated files #
 ######################
