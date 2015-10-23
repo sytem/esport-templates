@@ -6,10 +6,11 @@
 	width: 120px; 
 	height: 60px; 
 	color: #000;
-	font-size: 30px;
+	font-size: 40px;
 	background-color:rgba(0,0,0,0.6);
 	border-color: #000000;
 	border-width: 2px;
     -webkit-border-radius: 5px;
-    padding: 10px;
+    margin: auto;
+    padding: 5px;
 }
