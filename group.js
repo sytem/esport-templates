@@ -9,8 +9,14 @@ $(function() {
 
 function templatePlay() {
 
-	f0 = 9;
-	 //f0 = valueList.evaluate("/templateData/componentData[@id='f0']/data/@value", valueList, null, XPathResult.STRING_TYPE, null).stringValue;
+	});
+
+    
+function update(xml) {
+	console.log('update1');    
+
+	 // = 8;
+	 f0 = valueList.evaluate("/templateData/componentData[@id='f0']/data/@value", valueList, null, XPathResult.STRING_TYPE, null).stringValue;
 	 console.log(f0);
 
 	 var url = "https://tournaments.insomnia.fi/tournaments/starcraft-ii/groups/" + f0;
@@ -22,10 +28,12 @@ function templatePlay() {
 	$("#header").load(headerUrl);
     $("#boxContent").load(contentUrl, function() {
  		$("td img").remove();
-	});
-    
-    
+ 		$("tr :nth-child(5)").remove();
+ 		$("tr :nth-child(6)").remove();
+ 		$("tr :nth-child(7)").remove();
+ 		$("tr :nth-child(8)").remove();
 
+};
 
 	document.getElementById('box').className = 'animationMoveIn';
 	document.getElementById('boxContent').className = 'animationFadeIn';	
