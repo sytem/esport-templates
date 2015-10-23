@@ -3,6 +3,8 @@ var settings = {
 	showFieldNames: false,
 	twitterTag: "#InsomniaXVII",
 	
+	groupID: 10,
+	
 	casters :{ 
 		f0:"Starre Caster",
 		f1:"nick",
