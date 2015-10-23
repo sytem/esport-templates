@@ -12,9 +12,9 @@ $(function() {
 	$.getJSON( JSONurl, function(bracket){ 
 
 	//make grid
-	var output = "<table> <tr> <td id=\"8-1\"></td> <td id=\"4-1\"></td><td id=\"2-1\"></td> </tr>\n";
-	output += "<tr> <td id=\"8-2\"></td> <td id=\"4-2\"></td> </tr>\n";
-	output += "<tr> <td id=\"8-3\"></td></tr>\n";
+	var output = "<table> <tr> <td id=\"8-1\"></td> <td id=\"4-1\" rowspan=2></td><td id=\"2-1\" rowspan=4></td> </tr>\n";
+	output += "<tr> <td id=\"8-2\"></td></tr>\n";
+	output += "<tr> <td id=\"8-3\"></td> <td id=\"4-2\" rowspan=2></td>  </tr>\n";
 	output += "<tr> <td id=\"8-4\"></td></tr>\n";
 	output += "</table>" ;
 	document.getElementById("boxContent").innerHTML = output;
