@@ -7,7 +7,7 @@
 	Opacity:0.9;
 	-webkit-border-radius: 30px;
     top:100px;
-    left:-1000px;
+    left:-1080px;
 	padding: 30px;
 }
 
@@ -32,6 +32,11 @@ td {
 	-webkit-border-radius: 5px;
 }
 
+.group_scores .adv_limit {
+    background: none;
+    }
+
+
 
 .animationMoveIn {
     -webkit-animation-name: moveIn;
@@ -55,3 +60,4 @@ td {
     0%   {left:100px; }
     100% {left:1280px; }
 }
+
