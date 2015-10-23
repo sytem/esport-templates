@@ -1,0 +1,15 @@
+#vasen img{
+	position: absolute;
+	left: 20px;
+	top: 50 px;
+	width: 150px;
+	height: 300px;
+}
+
+#oikea  img{
+	position: absolute;
+	right: 20px;
+	top: 50 px;
+	width: 150px;
+	height: 300px;
+}
