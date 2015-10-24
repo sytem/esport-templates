@@ -1,9 +1,11 @@
 // need in settings:
 /* 
 hsingame : {
-		f0: "Torso",
-		f1: "norage",
-		f2: "Final B07"
+		f0: "Janetzky",
+		f1: "RCTIC.eSports<br>Kufdon",
+		f2: "0",
+		f3: "0",
+		f4: "Finals BO7"
 	},
 */	
 
@@ -19,7 +21,8 @@ function templateUpdate() {
 	left.appendTo('#vasen')
 
 	//var right = $('<img>').attr('src',"http://elderx.fi/lan/insomnia-xvii/ins-hs/" +  settings.hsRight + ".JPG" );
-	var right = $('<img>').attr('src',"http://sytem.fi/pelaajat/" +  $('#f1').text() + ".jpg" );
+	//var right = $('<img>').attr('src',"http://sytem.fi/pelaajat/" +  $('#f1').text() + ".jpg" );
+	var right = $('<img>').attr('src',"http://sytem.fi/pelaajat/Kufdon.jpg" );
 	right.appendTo('#oikea')
 }
 	

@@ -5,6 +5,14 @@ var settings = {
 	
 	groupID: 11,
 	
+	hsingame : {
+		f0: "Janetzky",
+		f1: "RCTIC.eSports<br>Kufdon",
+		f2: "0",
+		f3: "0",
+		f4: "Finals BO7"
+	},
+	
 	casters :{ 
 		f0:"JUHA NURMENNIEMI",
 		f1:"Divinesia",
