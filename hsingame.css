@@ -10,6 +10,7 @@ body {
 	bottom: 432px;
 	width: 179px;
 	border: 0px;
+
 }
 
 #oikea  img{
@@ -18,20 +19,67 @@ body {
 	bottom: 432px;
 	width: 179px;
 	border: 0px;
+
 }
 
 .active  {
-	width: 79px;
+	
+
 }
 
 #f0 {
 	position: absolute;
-	left: 10px;
-	top: 300px;
+	left: 20px;
+	top: 310px;
 }
 
 #f1 {
 	position: absolute;
-	right: 10px;
-	top: 300px;
+	right: 20px;
+	top: 310px;
+}
+
+#f2  {
+	position: absolute;
+	left: 160px;
+	top: 310px;
+}
+#f3  {
+	position: absolute;
+	right: 160px;
+	top: 310px;
+}
+
+
+#f4  {
+	position: absolute;
+	left: 20px;
+	top: 350px;
+	font-size: 25px;
+}
+
+#leftActive {
+	position: absolute;
+	left: 180px;
+	top: 0px;
+	width: 10px;
+	height: 720px;
+	background-color: #dc8021;
+}
+
+#rightActive {
+	position: absolute;
+	right: 180px;
+	top: 0px;
+	width: 10px;
+	height: 720px;
+	background-color: #dc8021;
+	
+}
+
+.notActive {
+	opacity: 0;
+}
+.barActive {
+	opacity: 1;
 }

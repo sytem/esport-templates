@@ -26,7 +26,18 @@ function templateUpdate() {
 
 function templateNext() {
 	console.log('next');
-	$("#vasen").addClass("active");	
+	if ( $("#f0").hasClass( "active" ) ){
+		$("#f1").addClass("active");	
+		$("#f0").removeClass("active");	
+		$("#rightActive").addClass("barActive");	
+		$("#leftActive").removeClass("barActive");	
+	}	
+	else {
+		$("#f0").addClass("active");	
+		$("#f1").removeClass("active");	
+		$("#leftActive").addClass("barActive");	
+		$("#rightActive").removeClass("barActive");	
+	}
 }
 
 
