@@ -5,9 +5,9 @@
 	position: absolute; 
 	width: 120px; 
 	height: 60px; 
-	color: #000;
+	color: #fff;
 	font-size: 40px;
-	background-color:rgba(0,0,0,0.6);
+	background-color:rgba(0,0,0,0.3);
 	border-color: #000000;
 	border-width: 2px;
     -webkit-border-radius: 5px;

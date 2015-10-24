@@ -3,17 +3,17 @@ var settings = {
 	showFieldNames: false,
 	twitterTag: "#InsomniaXVII",
 	
-	groupID: 10,
+	groupID: 11,
 	
 	casters :{ 
-		f0:"Starre Caster",
-		f1:"nick",
-		f2:"Starre Commentator",
-		f3:"nick tässäkin"
+		f0:"JUHA NURMENNIEMI",
+		f1:"Divinesia",
+		f2:"ESA KOISJOKI",
+		f3:"Snapple"
 	},	
 
 	interview :{
 		f0:"Pro Pelaaja",
-		f1:"gamer"
+		f1:""
 	}
 };	
